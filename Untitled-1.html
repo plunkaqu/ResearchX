@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Detection Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AI Detection Tool</h1>
+    </header>
+    <main>
+        <form id="uploadForm" action="/analyze" method="POST" enctype="multipart/form-data">
+            <label for="fileInput">Upload a file:</label>
+            <input type="file" id="fileInput" name="file" required>
+            <button type="submit">Analyze</button>
+        </form>
+        <div id="result"></div>
+    </main>
+</body>
+</html>
